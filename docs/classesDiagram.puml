@@ -1,0 +1,40 @@
+@startuml classes diagram
+
+class Customer {
+    - id : int
+    - firstname : String
+    - lastname : String
+}
+
+class Cart {
+    - products : Product[]
+    - storageKey : String
+}
+
+class Product {
+    - id : int
+    - name : String
+    - description : String
+    - category : String
+    - price : decimal
+    - stock : int
+}
+
+class ProductManager {
+    - products : Product[]
+    - storageKey : String
+}
+
+class Order {
+    - id : int
+    - customer : Customer
+    - products : Product[]
+}
+
+ProductManager "1" o-- "1..*" Product
+Cart "0..*" o-- "0..*" Product
+Customer "1" *-- "1" Cart
+Customer "1" o-- "*" Order
+Order "*" o-- "*" Product
+
+@enduml
