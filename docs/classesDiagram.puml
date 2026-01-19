@@ -15,6 +15,7 @@ class Product {
     - id : int
     - name : String
     - description : String
+    - pictureURL : String
     - category : String
     - price : decimal
     - stock : int
