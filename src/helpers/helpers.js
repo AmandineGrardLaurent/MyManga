@@ -30,9 +30,7 @@ export function displayCategory(categoryName, container, productsData) {
 // Fonction de gestion du clic sur les boutons "Ajouter au panier"
 // On vérifie que le clic est sur un bouton spécifique et on récupère l'id du produit
 export function handleClick(event) {
-  console.log("Clicked element:", event.target);
   if (!event.target.classList.contains("addCartBtn")) return;
   const productId = event.target.dataset.id;
-  console.log(productId);
   cart.addToCart(productId);
 }
