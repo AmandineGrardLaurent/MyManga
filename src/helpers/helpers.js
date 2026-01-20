@@ -1,36 +1,26 @@
-import ItemCard from "../components/ItemCard/ItemCard.js";
-import Cart from "../models/Cart.js";
+// Fonction factory qui retourne un gestionnaire d'événement "click"
+export function handleClick({
+  cart,
+  currentPage,
+  homepageContainer,
+  productsData,
+  displayCart,
+}) {
+  // Fonction réellement attachée à l'événement click
+  return function (event) {
+    // On vérifie que le clic provient bien d'un bouton "Ajouter au panier"
+    if (!event.target.classList.contains("addCartBtn")) return;
 
-const cart = new Cart();
+    // Récupération de l'id du produit depuis l'attribut data-id du bouton
+    const productId = event.target.dataset.id;
 
-export function displayCategory(categoryName, container, productsData) {
-  // Définir le titre
-  let title =
-    categoryName === "All"
-      ? "Tous les produits"
-      : `La liste de la catégorie ${categoryName}`;
+    // Ajout du produit au panier via la classe Cart
+    cart.addToCart(productId);
 
-  container.innerHTML = `<h2>${title}</h2><section id="category-products"></section>`;
-
-  // Sélectionner la section où on mettra les produits
-  const section = document.getElementById("category-products");
-
-  // Filtrer les produits selon la catégorie
-  const filteredProducts =
-    categoryName === "All"
-      ? productsData
-      : productsData.filter((p) => p.category === categoryName);
-
-  // Ajouter les produits dans la section
-  filteredProducts.map((p) => {
-    section.innerHTML += ItemCard(p);
-  });
-}
-
-// Fonction de gestion du clic sur les boutons "Ajouter au panier"
-// On vérifie que le clic est sur un bouton spécifique et on récupère l'id du produit
-export function handleClick(event) {
-  if (!event.target.classList.contains("addCartBtn")) return;
-  const productId = event.target.dataset.id;
-  cart.addToCart(productId);
+    // Si l'utilisateur est actuellement sur la page panier
+    // on ré-affiche le panier pour refléter la mise à jour sans recharger la page
+    if (currentPage() === "cart") {
+      displayCart(cart, homepageContainer, productsData);
+    }
+  };
 }
