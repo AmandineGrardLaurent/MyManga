@@ -1,23 +1,32 @@
 export default class Cart {
   constructor() {
-    this.items = JSON.parse(localStorage.getItem("cart")) || [];
+    this.itemsId = JSON.parse(localStorage.getItem("cart")) || [];
   }
 
   // Fonction pour ajouter un produit au panier
   addToCart(productId) {
-    this.items.push(productId);
-    localStorage.setItem("cart", JSON.stringify(this.items));
-    alert("Produit ajouté au panier");
+    // On récupère le panier dans le navigateur (à jour)
+    this.itemsId = JSON.parse(localStorage.getItem("cart")) || [];
+
+    // On vérifie si le produit est déjà présent dans le panier
+    if (!this.itemsId.includes(productId)) {
+      // On ajoute l'id du produit dans le panier
+      this.itemsId.push(productId);
+      localStorage.setItem("cart", JSON.stringify(this.itemsId));
+      alert("Produit ajouté au panier");
+    } else {
+      alert("Produit déjà présent dans le panier");
+    }
   }
 
   // Fonction pour vider le panier
   clearCart() {
-    this.items = [];
-    localStorage.setItem("cart", JSON.stringify(this.items));
+    this.itemsId = [];
+    localStorage.setItem("cart", JSON.stringify(this.itemsId));
     alert("Panier vidé");
   }
 
-  getItems() {
-    return this.items;
+  getItemsId() {
+    return this.itemsId;
   }
 }
