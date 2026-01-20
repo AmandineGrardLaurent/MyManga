@@ -5,6 +5,7 @@ export function displayCart(cart, homepageContainer, productsData) {
 
   homepageContainer.innerHTML = `<h2>Panier</h2> 
                                 <section id="cart-products"></section>
+                                <button class="clear-cart-btn">Vider le panier</button>
                                 `;
 
   const sectionCart = document.getElementById("cart-products");

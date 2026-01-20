@@ -8,18 +8,23 @@ export function handleClick({
 }) {
   // Fonction réellement attachée à l'événement click
   return function (event) {
-    // On vérifie que le clic provient bien d'un bouton "Ajouter au panier"
-    if (!event.target.classList.contains("addCartBtn")) return;
+    // On vérifie que le clic provient bien d'un bouton add-cart-btn
+    if (event.target.classList.contains("add-cart-btn")) {
+      // Récupération de l'id du produit depuis l'attribut data-id du bouton
+      const productId = event.target.dataset.id;
 
-    // Récupération de l'id du produit depuis l'attribut data-id du bouton
-    const productId = event.target.dataset.id;
+      // Ajout du produit au panier via la classe Cart
+      cart.addToCart(productId);
 
-    // Ajout du produit au panier via la classe Cart
-    cart.addToCart(productId);
+      // Si l'utilisateur est actuellement sur la page panier
+      // on ré-affiche le panier pour refléter la mise à jour sans recharger la page
+      if (currentPage() === "cart") {
+        displayCart(cart, homepageContainer, productsData);
+      }
 
-    // Si l'utilisateur est actuellement sur la page panier
-    // on ré-affiche le panier pour refléter la mise à jour sans recharger la page
-    if (currentPage() === "cart") {
+      // On vérifie que le clic provient bien d'un bouton clear-cart-btn
+    } else if (event.target.classList.contains("clear-cart-btn")) {
+      cart.clearCart();
       displayCart(cart, homepageContainer, productsData);
     }
   };
