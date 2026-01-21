@@ -1,30 +1,33 @@
 // Fonction factory qui retourne un gestionnaire d'événement "click"
 export function handleClick({
   cart,
-  currentPage,
+
   homepageContainer,
   productsData,
   displayCart,
 }) {
   // Fonction réellement attachée à l'événement click
   return function (event) {
-    // On vérifie que le clic provient bien d'un bouton add-cart-btn
-    if (event.target.classList.contains("add-cart-btn")) {
-      // Récupération de l'id du produit depuis l'attribut data-id du bouton
-      const productId = event.target.dataset.id;
+    // Récupère l'id du produit depuis l'attribut data-id du bouton
+    const productId = event.target.dataset.id;
 
+    // Le clic provient du bouton add-cart-btn (ajouter au panier)
+    if (event.target.classList.contains("add-cart-btn")) {
       // Ajout du produit au panier via la classe Cart
       cart.addToCart(productId);
 
-      // Si l'utilisateur est actuellement sur la page panier
-      // on ré-affiche le panier pour refléter la mise à jour sans recharger la page
-      if (currentPage() === "cart") {
-        displayCart(cart, homepageContainer, productsData);
-      }
-
-      // On vérifie que le clic provient bien d'un bouton clear-cart-btn
+      // Le clic provient du bouton clear-cart-btn (vider le panier)
     } else if (event.target.classList.contains("clear-cart-btn")) {
       cart.clearCart();
+
+      // on ré-affiche le panier pour refléter la mise à jour sans recharger la page
+      displayCart(cart, homepageContainer, productsData);
+
+      // Le clic provient du bouton remove-cart-btn (supprimer du panier)
+    } else if (event.target.classList.contains("remove-cart-btn")) {
+      cart.removeFromCart(productId);
+
+      // on ré-affiche le panier pour refléter la mise à jour sans recharger la page
       displayCart(cart, homepageContainer, productsData);
     }
   };
