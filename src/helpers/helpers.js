@@ -1,10 +1,11 @@
 // Fonction factory qui retourne un gestionnaire d'événement "click"
 export function handleClick({
   cart,
-
   homepageContainer,
   productsData,
-  displayCart,
+  CartPage,
+  ProductDetailsPage,
+  ProductsPage,
 }) {
   // Fonction réellement attachée à l'événement click
   return function (event) {
@@ -21,14 +22,18 @@ export function handleClick({
       cart.clearCart();
 
       // on ré-affiche le panier pour refléter la mise à jour sans recharger la page
-      displayCart(cart, homepageContainer, productsData);
+      CartPage(cart, homepageContainer, productsData);
 
       // Le clic provient du bouton remove-cart-btn (supprimer du panier)
     } else if (event.target.classList.contains("remove-cart-btn")) {
       cart.removeFromCart(productId);
 
       // on ré-affiche le panier pour refléter la mise à jour sans recharger la page
-      displayCart(cart, homepageContainer, productsData);
+      CartPage(cart, homepageContainer, productsData);
+    } else if (event.target.classList.contains("details-product-btn")) {
+      ProductDetailsPage(productId, homepageContainer, productsData);
+    } else if (event.target.classList.contains("return-btn")) {
+      ProductsPage("All", homepageContainer, productsData);
     }
   };
 }
