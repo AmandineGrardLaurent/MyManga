@@ -5,14 +5,25 @@ export function displayCart(cart, homepageContainer, productsData) {
 
   homepageContainer.innerHTML = `<h2>Panier</h2> 
                                 <section id="cart-products"></section>
-                                <button class="clear-cart-btn">Vider le panier</button>
+                                <button class="clear-cart-btn btn btn-warning mt-3 rounded-pill">Vider le panier</button>
                                 `;
 
   const sectionCart = document.getElementById("cart-products");
+  sectionCart.classList.add(
+    "row",
+    "row-cols-1",
+    "row-cols-sm-2",
+    "row-cols-md-3",
+    "g-3",
+    "mb-3",
+  );
 
   productsData
     .filter((p) => cartIds.includes(p.id))
     .map((p) => {
-      sectionCart.innerHTML += ItemCard(p, "cart");
+      const col = document.createElement("div");
+      col.className = "col"; // colonne Bootstrap
+      col.innerHTML = ItemCard(p, "cart");
+      sectionCart.appendChild(col);
     });
 }

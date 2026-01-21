@@ -3,12 +3,23 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="./src/components/ItemCard/ItemCard.css">
+	<!-- CSS Bootstrap -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- JS Bootstrap (nécessaire pour les composants interactifs) -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
 	<title>MyManga</title>
 </head>
 <body>
-	<div id="sidebar"></div>
-	<main id="homepage"></main>
+	<div class="d-flex">
+		<!-- Sidebar fixe -->
+		<div id="sidebar"></div>
+
+		<!-- Contenu principal -->
+		<main id="homepage" class="flex-grow-1 p-3"></main>
+	</div>
+
 	<script type="module" src="main.js"></script>
 </body>
 </html>
