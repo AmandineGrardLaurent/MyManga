@@ -1,8 +1,10 @@
 import { handleClick } from "./src/helpers/helpers.js";
-import { displayProducts } from "./src/pages/ProductsPage/ProductsPage.js";
+import { ProductsPage } from "./src/pages/ProductsPage/ProductsPage.js";
 import Cart from "./src/models/Cart.js";
 import Sidebar from "./src/components/Sidebar/Sidebar.js";
-import { displayCart } from "./src/pages/CartPage/CartPage.js";
+import { CartPage } from "./src/pages/CartPage/CartPage.js";
+import { ProductDetailsPage } from "./src/pages/ProductDetailsPage/ProductDetailsPage.js";
+import ItemCardDetails from "./src/components/ItemCardDetails/ItemCardDetails.js";
 
 const cart = new Cart();
 
@@ -14,43 +16,62 @@ async function loadProducts() {
   return data.productsData;
 }
 
-// Récupération des produits depuis le JSON
+// Récupére les articles depuis le JSON
 const productsData = await loadProducts();
 
-// Sélection du conteneur où les produits seront affichés
+// Sélection du conteneur où les articles seront affichés
 const homepageContainer = document.getElementById("homepage");
+homepageContainer.style.marginLeft = "220px"; // largeur de la sidebar
+
 const sidebarContainer = document.getElementById("sidebar");
 let currentPage = "products";
 
+// Affichage du sidebar
 sidebarContainer.innerHTML = Sidebar();
 
+ProductsPage("All", homepageContainer, productsData);
+// homepageContainer.innerHTML = ProductDetailsPage(productsData);
+
+// homepageContainer.innerHTML = ItemCardDetails(productsData[1]);
+
+/////////////////////////// EVENEMENTS /////////////////////////////////////
+
+// Écoute des clics dans le sidebar pour changer de page ou filtrer par catégorie
 sidebarContainer.addEventListener("click", (event) => {
   const page = event.target.dataset.page;
   const category = event.target.dataset.category;
 
   if (page == "products") {
     currentPage = "products";
-    displayProducts("All", homepageContainer, productsData);
+
+    // Affiche tous les produits
+    ProductsPage("All", homepageContainer, productsData);
   }
 
   if (category) {
     currentPage = "products";
-    displayProducts(category, homepageContainer, productsData);
+
+    // Affiche les produits filtrés par catégorie
+    ProductsPage(category, homepageContainer, productsData);
   }
 
   if (page == "cart") {
     currentPage = "cart";
-    displayCart(cart, homepageContainer, productsData);
+
+    // Affiche le panier
+    CartPage(cart, homepageContainer, productsData);
   }
 });
 
-// Gestion des événements pour ajouter un produit au panier
+// Gestion des événements pour ajouter un article au panier
 homepageContainer.addEventListener(
   "click",
   handleClick({
     cart,
     homepageContainer,
     productsData,
-    displayCart,
+    CartPage,
+    ProductDetailsPage,
+    ProductsPage,
   }),
 );
