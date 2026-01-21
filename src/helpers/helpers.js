@@ -1,5 +1,5 @@
-// Fonction factory qui retourne un gestionnaire d'événement "click"
-export function handleClick({
+// Fonction factory qui retourne un gestionnaire d'événement "click" dans le container homepage
+export function handleClickHomepage({
   cart,
   homepageContainer,
   productsData,
@@ -34,6 +34,43 @@ export function handleClick({
       ProductDetailsPage(productId, homepageContainer, productsData);
     } else if (event.target.classList.contains("return-btn")) {
       ProductsPage("All", homepageContainer, productsData);
+    }
+  };
+}
+
+// Fonction factory qui retourne un gestionnaire d'événement "click" dans le container sidebar
+export function handleClickSidebar({
+  cart,
+  homepageContainer,
+  productsData,
+  CartPage,
+  ProductsPage,
+  setCurrentPage,
+}) {
+  // Fonction réellement attachée à l'événement click
+  return function (event) {
+    const page = event.target.dataset.page;
+    const category = event.target.dataset.category;
+
+    if (page == "products") {
+      setCurrentPage("products");
+
+      // Affiche tous les produits
+      ProductsPage("All", homepageContainer, productsData);
+    }
+
+    if (category) {
+      setCurrentPage("products");
+
+      // Affiche les produits filtrés par catégorie
+      ProductsPage(category, homepageContainer, productsData);
+    }
+
+    if (page == "cart") {
+      setCurrentPage("cart");
+
+      // Affiche le panier
+      CartPage(cart, homepageContainer, productsData);
     }
   };
 }
