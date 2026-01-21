@@ -1,6 +1,6 @@
 import ItemCard from "../../components/ItemCard/ItemCard.js";
 
-export function displayCart(cart, homepageContainer, productsData) {
+export function CartPage(cart, homepageContainer, productsData) {
   const cartIds = cart.getItemsId().map((id) => parseInt(id));
 
   homepageContainer.innerHTML = `<h2>Panier</h2> 

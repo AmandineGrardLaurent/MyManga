@@ -5,7 +5,7 @@ export default function Sidebar() {
         class="container-menu d-flex flex-column bg-light border-end position-fixed vh-100 p-3"
         style="width: 220px;"
       >
-        <img src="../../../datas/logo.png" />
+        <img src="../../../docs/logo.png" />
         <button class="btn btn-outline-success w-100 mb-2" data-page="products">
           Tous les produits
         </button>

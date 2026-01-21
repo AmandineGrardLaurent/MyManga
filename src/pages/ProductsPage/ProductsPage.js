@@ -1,7 +1,6 @@
-// src/pages/ProductsPage.js
 import ItemCard from "../../components/ItemCard/ItemCard.js";
 
-export function displayProducts(categoryName, container, productsData) {
+export function ProductsPage(categoryName, container, productsData) {
   // Définir le titre selon la catégorie
   const title =
     categoryName === "All" ? "Tous les produits" : `Catégorie ${categoryName}`;
