@@ -13,6 +13,6 @@ export function displayCart(cart, homepageContainer, productsData) {
   productsData
     .filter((p) => cartIds.includes(p.id))
     .map((p) => {
-      sectionCart.innerHTML += ItemCard(p);
+      sectionCart.innerHTML += ItemCard(p, "cart");
     });
 }

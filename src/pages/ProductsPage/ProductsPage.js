@@ -18,6 +18,6 @@ export function displayProducts(categoryName, container, productsData) {
 
   // Ajouter les produits dans la section
   filteredProducts.map((p) => {
-    section.innerHTML += ItemCard(p);
+    section.innerHTML += ItemCard(p, "products");
   });
 }
