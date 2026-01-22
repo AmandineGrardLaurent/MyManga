@@ -80,13 +80,13 @@ my-manga-store/
 
 ## Installation
 
-1. Cloner le projet :
+**1.** Cloner le projet :
 
 ```yaml
 git clone https://github.com/AmandineGrardLaurent/MyManga.git
 ```
 
-2. Ouvrir le fichier index.html dans un navigateur moderne (Chrome, Firefox, Edge)
+**2.** Ouvrir le fichier index.html dans un navigateur moderne (Chrome, Firefox, Edge)
 
 ---
 
@@ -109,18 +109,16 @@ git clone https://github.com/AmandineGrardLaurent/MyManga.git
 ## Usage
 
 1. **Navigation** :
+   - Sidebar à gauche pour accéder aux produits et au panier
 
-- Sidebar à gauche pour accéder aux produits et au panier
-
-- Les boutons des catégories filtrent les produits affichés
+   - Les boutons des catégories filtrent les produits affichés
 
 2. **Panier** :
+   - Ajouter un produit via le bouton « Ajouter au panier »
 
-- Ajouter un produit via le bouton « Ajouter au panier »
+   - Supprimer un produit via le bouton « Retirer du panier »
 
-- Supprimer un produit via le bouton « Retirer du panier »
-
-- Vider complètement le panier via « Vider le panier »
+   - Vider complètement le panier via « Vider le panier »
 
 3. **Détails produit** :
 
