@@ -45,7 +45,7 @@ export default function ItemCard(product, mode) {
           }
           
           <button
-            class="details-product-btn btn btn-success rounded-pill mt-2"
+            class="details-product-btn btn btn-light border rounded-pill mt-2"
             style="width: 10rem;"
             data-id="${product.id}"
           >

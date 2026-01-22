@@ -27,7 +27,7 @@ export default function ItemCardDetails(product) {
                   Ajouter au panier
                 </button>
                 <button
-                  class="return-btn btn btn-secondary rounded-pill mt-2 m-auto"
+                  class="return-btn btn btn-light border rounded-pill mt-2 m-auto"
                   style="width: 10rem;"
                 >
                   <i class="bi bi-arrow-left"></i> Retour
