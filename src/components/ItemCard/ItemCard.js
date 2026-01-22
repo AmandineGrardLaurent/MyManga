@@ -18,7 +18,7 @@ export default function ItemCard(product, mode) {
             style="max-height: 100%; max-width: 100%;"
           />
         </div>
-        <div class="card-body d-flex flex-column">
+        <div class="card-body d-flex flex-column align-items-center">
           <h5 class="card-title">${product.name}</h5>
           <p class="card-text">${product.price} €</p>
 
@@ -27,7 +27,7 @@ export default function ItemCard(product, mode) {
             Affiche uniquement lorsque la carte
             est utilisée dans la page des produits*/
             mode === "products"
-              ? `<button class="add-cart-btn btn btn-warning rounded-pill mt-auto" data-id="${product.id}">
+              ? `<button class="add-cart-btn btn btn-warning rounded-pill" style="width: 10rem;" data-id="${product.id}">
                  Ajouter au panier
                </button>`
               : ""
@@ -38,7 +38,7 @@ export default function ItemCard(product, mode) {
             Affiche uniquement lorsque la carte
             est utilisée dans la page du panier */
             mode === "cart"
-              ? `<button class="remove-cart-btn btn btn-danger rounded-pill mt-auto" data-id="${product.id}">
+              ? `<button class="remove-cart-btn btn btn-danger rounded-pill" style="width: 10rem;" data-id="${product.id}">
                  Retirer du panier
                </button>`
               : ""
@@ -46,6 +46,7 @@ export default function ItemCard(product, mode) {
           
           <button
             class="details-product-btn btn btn-success rounded-pill mt-2"
+            style="width: 10rem;"
             data-id="${product.id}"
           >
             + détails
