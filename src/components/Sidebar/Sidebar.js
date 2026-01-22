@@ -27,6 +27,12 @@ export default function Sidebar() {
         </button>
         <button
           class="btn btn-outline-success w-100 mb-2"
+          data-category="Poster"
+        >
+          Poster
+        </button>
+        <button
+          class="btn btn-outline-success w-100 mb-2"
           data-category="Accessoire"
         >
           Accessoires
