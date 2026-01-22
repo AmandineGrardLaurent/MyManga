@@ -1,4 +1,9 @@
+// Classe Product
+// Représente un article du catalogue
+// Contient toutes les informations nécessaires à l'affichage et à la gestion d'un produit
 export default class Product {
+  // Constructeur
+  // Initialise un produit avec ses propriétés principales
   constructor(id, name, description, pictureURL, category, price, stock) {
     this.id = id;
     this.name = name;
@@ -29,6 +34,7 @@ export default class Product {
   getDescription() {
     return this.description;
   }
+
   setDescription(description) {
     this.description = description;
   }
@@ -61,6 +67,7 @@ export default class Product {
     this.stock = stock;
   }
 
+  // Retourne une représentation textuelle du produit
   toString() {
     return `${this.name} (${this.category}) - ${this.price} €`;
   }
