@@ -3,7 +3,7 @@
     {
       "id": 1,
       "name": "Naruto Vol.1",
-      "description": "Premier volume du manga Naruto.",
+      "description": "Découvrez le début de l'aventure épique de Naruto Uzumaki, un jeune ninja déterminé à devenir Hokage dans ce premier volume du manga culte Naruto. Plein d'action et d'humour, il pose les bases de l'univers ninja.",
       "pictureURL": "https://m.media-amazon.com/images/I/81qPI0y6ZuL._SY466_.jpg",
       "category": "Livre",
       "price": 6.99,
@@ -12,7 +12,7 @@
     {
       "id": 2,
       "name": "One Piece Vol.5",
-      "description": "Cinquième volume du manga One Piece.",
+      "description": "Rejoignez Monkey D. Luffy et son équipage dans le cinquième volume de One Piece, alors qu'ils affrontent de nouveaux ennemis et découvrent des îles fascinantes. Un manga d'aventure incontournable pour tous les fans de pirates.",
       "pictureURL": "https://m.media-amazon.com/images/I/9161teLdxwL._SY466_.jpg",
       "category": "Livre",
       "price": 7.5,
@@ -21,7 +21,7 @@
     {
       "id": 3,
       "name": "Attack on Titan Vol.3",
-      "description": "Troisième tome de L'Attaque des Titans.",
+      "description": "Plongez dans l'intensité et le suspense du troisième tome de L'Attaque des Titans, où Eren et ses amis continuent leur combat contre les mystérieux Titans pour protéger l'humanité.",
       "pictureURL": "https://m.media-amazon.com/images/I/81-YXp3RJ2L._SY425_.jpg",
       "category": "Livre",
       "price": 6.8,
@@ -30,7 +30,7 @@
     {
       "id": 4,
       "name": "Dragon Ball Vol.1",
-      "description": "Premier tome du manga Dragon Ball.",
+      "description": "Le tout premier tome du légendaire Dragon Ball, où nous suivons les aventures de Son Goku, un garçon doté d'une force incroyable, dans sa quête des Dragon Balls et ses premiers combats épiques.",
       "pictureURL": "https://m.media-amazon.com/images/I/81TkSJw2vqL._SY466_.jpg",
       "category": "Livre",
       "price": 6.99,
@@ -39,7 +39,7 @@
     {
       "id": 5,
       "name": "My Hero Academia Vol.1",
-      "description": "Premier volume de My Hero Academia.",
+      "description": "Découvrez Izuku Midoriya, un jeune garçon sans pouvoirs dans un monde de super-héros, qui rêve de devenir le plus grand héros dans ce premier volume captivant de My Hero Academia.",
       "pictureURL": "https://m.media-amazon.com/images/I/71E9R+OIuKL._SY466_.jpg",
       "category": "Livre",
       "price": 6.5,
@@ -48,7 +48,7 @@
     {
       "id": 6,
       "name": "Poster Naruto",
-      "description": "Poster illustré Naruto.",
+      "description": "Un poster vibrant illustrant Naruto Uzumaki dans toute sa gloire de ninja de Konoha. Parfait pour décorer une chambre ou un bureau et afficher votre passion pour le manga.",
       "pictureURL": "https://m.media-amazon.com/images/I/51UzAOm0paL._AC_SX679_.jpg",
       "category": "Poster",
       "price": 4.99,
@@ -57,7 +57,7 @@
     {
       "id": 7,
       "name": "Poster One Piece",
-      "description": "Poster illustré One Piece.",
+      "description": "Affichez votre amour pour les aventures de Monkey D. Luffy avec ce poster coloré de One Piece, capturant l'esprit libre et audacieux des pirates de Grand Line.",
       "pictureURL": "https://m.media-amazon.com/images/I/81XRv41MmOL._AC_SY300_SX300_QL70_ML2_.jpg",
       "category": "Poster",
       "price": 5.99,
@@ -66,7 +66,7 @@
     {
       "id": 8,
       "name": "Poster Dragon Ball",
-      "description": "Poster illustré Dragon Ball.",
+      "description": "Un poster dynamique de Dragon Ball mettant en avant Goku dans une pose iconique. Idéal pour les fans du célèbre manga d'Akira Toriyama.",
       "pictureURL": "https://m.media-amazon.com/images/I/712mWgOWX+L._AC_SX679_.jpg",
       "category": "Poster",
       "price": 5.5,
@@ -75,7 +75,7 @@
     {
       "id": 9,
       "name": "Figurine Goku",
-      "description": "Figurine du personnage Goku (Dragon Ball).",
+      "description": "Une figurine détaillée de Goku, le héros emblématique de Dragon Ball, parfaite pour les collectionneurs ou pour décorer votre espace geek.",
       "pictureURL": "https://m.media-amazon.com/images/I/61aObTWZICL._AC_SY879_.jpg",
       "category": "Figurine",
       "price": 29.99,
@@ -84,7 +84,7 @@
     {
       "id": 10,
       "name": "Figurine Luffy",
-      "description": "Figurine de Monkey D. Luffy (One Piece).",
+      "description": "Figurine de Monkey D. Luffy, le capitaine au chapeau de paille, dans une posture dynamique qui capture son esprit aventureux et son énergie débordante.",
       "pictureURL": "https://m.media-amazon.com/images/I/61RDEciOYiL._AC_SX425_.jpg",
       "category": "Figurine",
       "price": 31.99,
@@ -93,7 +93,7 @@
     {
       "id": 11,
       "name": "Figurine Naruto",
-      "description": "Figurine de Naruto Uzumaki.",
+      "description": "Figurine de Naruto Uzumaki en tenue de ninja, représentant fidèlement son caractère déterminé et son énergie inépuisable. Un must pour tout fan de Naruto.",
       "pictureURL": "https://m.media-amazon.com/images/I/61184l50OmL._AC_SX679_.jpg",
       "category": "Figurine",
       "price": 28.99,
@@ -102,7 +102,7 @@
     {
       "id": 12,
       "name": "Figurine Mikasa",
-      "description": "Figurine du personnage Mikasa (Attack on Titan).",
+      "description": "Une figurine de Mikasa Ackerman, personnage fort et emblématique de L'Attaque des Titans, dans une pose prête pour l'action et la protection de ses proches.",
       "pictureURL": "https://m.media-amazon.com/images/I/71Wl+pzXvPL._AC_SY300_SX300_QL70_ML2_.jpg",
       "category": "Figurine",
       "price": 32.5,
@@ -111,7 +111,7 @@
     {
       "id": 13,
       "name": "Headband Naruto",
-      "description": "Bandeau ninja Konoha (Naruto).",
+      "description": "Reproduisez le bandeau ninja de Konoha porté par Naruto Uzumaki. Idéal pour les cosplay, les collectionneurs ou pour montrer votre passion pour le manga.",
       "pictureURL": "https://m.media-amazon.com/images/I/71wvmN37roL._AC_SX425_.jpg",
       "category": "Accessoire",
       "price": 8.99,
@@ -119,8 +119,8 @@
     },
     {
       "id": 14,
-      "name": "Accessoire Keychain Luffy",
-      "description": "Porte-clés One Piece.",
+      "name": "AKeychain Luffy",
+      "description": "Porte-clés représentant Monkey D. Luffy de One Piece. Un petit accessoire parfait pour personnaliser vos clés ou sacs avec style.",
       "pictureURL": "https://m.media-amazon.com/images/I/613yPxGYvWL._AC_SX425_.jpg",
       "category": "Accessoire",
       "price": 6.5,
@@ -128,8 +128,8 @@
     },
     {
       "id": 15,
-      "name": "Accessoire Mug DBZ",
-      "description": "Mug à l’effigie de Dragon Ball Z.",
+      "name": "Mug DBZ",
+      "description": "Mug à l’effigie de Dragon Ball Z, idéal pour savourer vos boissons chaudes tout en montrant votre passion pour Goku et ses aventures épiques.",
       "pictureURL": "https://m.media-amazon.com/images/I/81L+1jWvJyL._AC_SX679_.jpg",
       "category": "Accessoire",
       "price": 12.9,
@@ -137,8 +137,8 @@
     },
     {
       "id": 16,
-      "name": "Goodie Badge Naruto",
-      "description": "Badge Naruto Uzumaki.",
+      "name": "Badge Naruto",
+      "description": "Badge illustré avec Naruto Uzumaki, parfait pour accrocher sur vos sacs, vestes ou accessoires et afficher votre fan attitude.",
       "pictureURL": "https://m.media-amazon.com/images/I/61yRhVSAOJL._AC_SX679_.jpg",
       "category": "Goodie",
       "price": 3.99,
@@ -146,8 +146,8 @@
     },
     {
       "id": 17,
-      "name": "Goodie Sticker Dragon Ball",
-      "description": "Sticker Dragon Ball.",
+      "name": "Sticker Dragon Ball",
+      "description": "Sticker coloré Dragon Ball pour personnaliser vos objets du quotidien, cahiers, ordinateurs ou téléphones avec l'univers de Goku.",
       "pictureURL": "https://m.media-amazon.com/images/I/71NUTTE36gL._AC_SX679_.jpg",
       "category": "Goodie",
       "price": 2.99,
@@ -156,16 +156,16 @@
     {
       "id": 18,
       "name": "Set Poster Jujutsu Kaizen",
-      "description": "Set de mini-posters anime Jujutsu Kaizen.",
+      "description": "Ensemble de mini-posters Jujutsu Kaisen mettant en avant vos personnages préférés. Parfait pour décorer votre chambre ou bureau avec style.",
       "pictureURL": "https://m.media-amazon.com/images/I/71jwXfWVKRL._AC_SX679_.jpg",
-      "category": "Goodie",
+      "category": "Poster",
       "price": 7.99,
       "stock": 35
     },
     {
       "id": 19,
       "name": "Livre Fairy Tail Vol.2",
-      "description": "Deuxième tome de Fairy Tail.",
+      "description": "Deuxième tome de Fairy Tail, où Natsu et ses amis poursuivent leurs aventures dans le monde magique, affrontant ennemis et défis pour protéger leurs camarades.",
       "pictureURL": "https://m.media-amazon.com/images/I/91g4i7jUX9L._SY466_.jpg",
       "category": "Livre",
       "price": 6.8,
@@ -174,11 +174,191 @@
     {
       "id": 20,
       "name": "Poster Jujutsu Kaisen",
-      "description": "Poster Jujutsu Kaisen.",
+      "description": "Un poster captivant de Jujutsu Kaisen mettant en scène les personnages principaux et l'atmosphère sombre et mystérieuse de l'anime.",
       "pictureURL": "https://m.media-amazon.com/images/I/81x0WQZZPDL._AC_SY879_.jpg",
       "category": "Poster",
       "price": 5.5,
       "stock": 38
+    },
+    {
+      "id": 21,
+      "name": "Manga Bleach Vol.1",
+      "description": "Première aventure de Ichigo Kurosaki, un adolescent capable de voir les esprits, dans ce tome initial de Bleach rempli d'action et de combats surnaturels.",
+      "pictureURL": "https://m.media-amazon.com/images/I/81G0iDgrFPL._SY522_.jpg",
+      "category": "Livre",
+      "price": 6.99,
+      "stock": 12
+    },
+    {
+      "id": 22,
+      "name": "Manga Demon Slayer Vol.1",
+      "description": "Suivez Tanjiro Kamado dans sa quête pour devenir un tueur de démons et protéger sa sœur Nezuko dans ce premier volume palpitant de Demon Slayer.",
+      "pictureURL": "https://m.media-amazon.com/images/I/51Ky6nqMXpL._SY445_SX342_QL70_ML2_.jpg",
+      "category": "Livre",
+      "price": 7.5,
+      "stock": 10
+    },
+    {
+      "id": 23,
+      "name": "Poster Bleach",
+      "description": "Un poster dynamique de Bleach mettant en avant Ichigo et ses compagnons dans une scène intense et iconique.",
+      "pictureURL": "https://m.media-amazon.com/images/I/71aDR8lPW4L._AC_SX679_.jpg",
+      "category": "Poster",
+      "price": 5.5,
+      "stock": 35
+    },
+    {
+      "id": 24,
+      "name": "Poster Demon Slayer",
+      "description": "Poster illustré de Demon Slayer avec Tanjiro et Nezuko, idéal pour décorer une chambre ou un bureau avec style.",
+      "pictureURL": "https://m.media-amazon.com/images/I/91+ShpVWyiL._AC_SX679_.jpg",
+      "category": "Poster",
+      "price": 5.5,
+      "stock": 30
+    },
+    {
+      "id": 25,
+      "name": "Figurine Ichigo",
+      "description": "Figurine détaillée d'Ichigo Kurosaki avec son sabre Zanpakuto, parfaite pour les collectionneurs de Bleach.",
+      "pictureURL": "https://m.media-amazon.com/images/I/51Nuz1MyhPL._AC_SX679_.jpg",
+      "category": "Figurine",
+      "price": 29.99,
+      "stock": 8
+    },
+    {
+      "id": 26,
+      "name": "Figurine Tanjiro",
+      "description": "Figurine de Tanjiro Kamado en posture de combat avec son épée, représentant toute la puissance et le courage de Demon Slayer.",
+      "pictureURL": "https://m.media-amazon.com/images/I/51sRlrZqrCL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "category": "Figurine",
+      "price": 31.99,
+      "stock": 6
+    },
+    {
+      "id": 27,
+      "name": "Mug Bleach",
+      "description": "Mug à l’effigie de Bleach, parfait pour les fans qui souhaitent savourer leur boisson avec style.",
+      "pictureURL": "https://m.media-amazon.com/images/I/71d-AHVC9EL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "category": "Accessoire",
+      "price": 12.9,
+      "stock": 18
+    },
+    {
+      "id": 28,
+      "name": "Keychain Demon Slayer",
+      "description": "Porte-clés de Tanjiro, parfait pour décorer vos clés ou sacs et montrer votre passion pour Demon Slayer.",
+      "pictureURL": "https://m.media-amazon.com/images/I/51yc6P06ItL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "category": "Accessoire",
+      "price": 6.5,
+      "stock": 25
+    },
+    {
+      "id": 29,
+      "name": "Sticker Bleach",
+      "description": "Sticker de Bleach pour personnaliser vos objets du quotidien avec Ichigo et ses compagnons.",
+      "pictureURL": "https://m.media-amazon.com/images/I/81u1qYEYreL._AC_SX679_.jpg",
+      "category": "Goodie",
+      "price": 2.99,
+      "stock": 45
+    },
+    {
+      "id": 30,
+      "name": "Badge Demon Slayer",
+      "description": "Badge de Tanjiro Kamado, parfait pour accrocher sur vos sacs ou vêtements et montrer votre fan attitude.",
+      "pictureURL": "https://m.media-amazon.com/images/I/81xfnjdxplL._AC_SX679_.jpg",
+      "category": "Goodie",
+      "price": 3.99,
+      "stock": 35
+    },
+    {
+      "id": 31,
+      "name": "Manga Black Clover Vol.1",
+      "description": "Découvrez Asta, un jeune garçon sans magie, dans son combat pour devenir le Roi Sorcier dans ce premier volume palpitant de Black Clover.",
+      "pictureURL": "https://m.media-amazon.com/images/I/61AEF+jYuNL._SY445_SX342_QL70_ML2_.jpg",
+      "category": "Livre",
+      "price": 6.99,
+      "stock": 14
+    },
+    {
+      "id": 32,
+      "name": "Poster Black Clover",
+      "description": "Poster illustré de Black Clover mettant en scène Asta et Yuno dans un style dynamique et épique.",
+      "pictureURL": "https://m.media-amazon.com/images/I/61J1WUZUi0L._AC_SY300_SX300_QL70_ML2_.jpg",
+      "category": "Poster",
+      "price": 5.5,
+      "stock": 30
+    },
+    {
+      "id": 33,
+      "name": "Figurine Asta",
+      "description": "Figurine détaillée d'Asta en pleine action, parfaite pour les collectionneurs de Black Clover.",
+      "pictureURL": "https://m.media-amazon.com/images/I/51xCOzp3ocL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "category": "Figurine",
+      "price": 29.99,
+      "stock": 9
+    },
+    {
+      "id": 34,
+      "name": "Mug Black Clover",
+      "description": "Mug illustré avec Asta et Yuno, idéal pour vos boissons chaudes tout en affichant votre passion pour Black Clover.",
+      "pictureURL": "https://m.media-amazon.com/images/I/610cm78fceL._AC_SX300_SY300_QL70_ML2_.jpg",
+      "category": "Accessoire",
+      "price": 12.9,
+      "stock": 20
+    },
+    {
+      "id": 35,
+      "name": "Sticker Black Clover",
+      "description": "Sticker coloré de Black Clover pour personnaliser vos affaires avec vos héros préférés.",
+      "pictureURL": "https://m.media-amazon.com/images/I/81j-eLcnrLL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "category": "Goodie",
+      "price": 2.99,
+      "stock": 40
+    },
+    {
+      "id": 36,
+      "name": "Manga Tokyo Revengers Vol.1",
+      "description": "Première aventure de Takemichi Hanagaki, qui tente de changer le passé pour sauver ses amis dans ce volume captivant de Tokyo Revengers.",
+      "pictureURL": "https://m.media-amazon.com/images/I/81Xs+9zJ7yL._SY522_.jpg",
+      "category": "Livre",
+      "price": 6.99,
+      "stock": 12
+    },
+    {
+      "id": 37,
+      "name": "Poster Tokyo Revengers",
+      "description": "Poster illustré de Tokyo Revengers mettant en avant Takemichi et les membres des Tokyo Manji Gang.",
+      "pictureURL": "https://m.media-amazon.com/images/I/61+RMR6GY7L._AC_SY300_SX300_QL70_ML2_.jpg",
+      "category": "Poster",
+      "price": 5.5,
+      "stock": 30
+    },
+    {
+      "id": 38,
+      "name": "Figurine Takemichi",
+      "description": "Figurine détaillée de Takemichi Hanagaki en posture héroïque, idéale pour les fans de Tokyo Revengers.",
+      "pictureURL": "https://m.media-amazon.com/images/I/51pOR2ymIRL._AC_SY300_SX300_QL70_ML2_.jpg",
+      "category": "Figurine",
+      "price": 29.99,
+      "stock": 8
+    },
+    {
+      "id": 39,
+      "name": "Badge Tokyo Revengers",
+      "description": "Badge illustré avec Takemichi, parfait pour décorer vos affaires et montrer votre passion pour Tokyo Revengers.",
+      "pictureURL": "https://m.media-amazon.com/images/I/81nIxRM440L._AC_SX679_.jpg",
+      "category": "Goodie",
+      "price": 3.99,
+      "stock": 35
+    },
+    {
+      "id": 40,
+      "name": "Keychain Black Clover",
+      "description": "Porte-clés de Black Clover avec Asta, idéal pour personnaliser vos clés ou sacs avec style.",
+      "pictureURL": "https://m.media-amazon.com/images/I/61NgVnJCpSL._AC_SX679_.jpg",
+      "category": "Accessoire",
+      "price": 6.5,
+      "stock": 25
     }
   ]
 }
