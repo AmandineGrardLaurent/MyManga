@@ -1,3 +1,4 @@
+// Classe qui gère le panier
 export default class Cart {
   // Constructeur : initialise le panier à partir du localStorage (ids)
   // ou crée un tableau vide si rien n'existe encore
