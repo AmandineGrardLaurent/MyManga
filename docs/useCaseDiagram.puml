@@ -1,0 +1,28 @@
+@startuml Use Case Diagram
+left to right direction
+skinparam packageStyle rectangle
+
+actor "Client" as Customer
+
+package "Application MyManga" {
+    usecase "Voir tous les produits" as UC1
+    usecase "Filtrer par catégorie" as UC2
+    usecase "Le panier" as UC4
+    usecase "Ajouter un produit au panier" as UC5
+    usecase "Retirer un produit du panier" as UC6
+    usecase "Vider le panier" as UC7
+}
+
+
+Customer -- UC1
+Customer -- UC2
+Customer -- UC4
+Customer -- UC5
+Customer -- UC6
+Customer -- UC7
+
+UC5 ..> UC4 : <<include>>
+UC6 ..> UC4 : <<include>>
+UC7 ..> UC4 : <<include>>
+
+@enduml
