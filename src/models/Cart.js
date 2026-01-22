@@ -54,4 +54,13 @@ export default class Cart {
   getItemsId() {
     return this.itemsId;
   }
+
+  // Retourne le prix total des articles du panier
+  getCartTotal(productsData) {
+    const cartIds = this.itemsId.map((id) => parseInt(id));
+    return productsData
+      .filter((p) => cartIds.includes(p.id))
+      .reduce((total, p) => total + p.price, 0)
+      .toFixed(2);
+  }
 }
