@@ -7,10 +7,16 @@ export function CartPage(cart, homepageContainer, productsData) {
   const cartIds = cart.getItemsId().map((id) => parseInt(id));
 
   // Génére la structure HTML de la page panier
-  homepageContainer.innerHTML = `<h2>Panier</h2> 
-                                <section id="cart-products"></section>
-                                <button class="clear-cart-btn btn btn-warning mt-3 rounded-pill">Vider le panier</button>
-                                `;
+  // Si le panier est vide alors le bouton 'vider le panier' n'est pas présent
+  homepageContainer.innerHTML = `
+    <h2>Panier</h2> 
+    <section id="cart-products"></section>
+    ${
+      cart.getItemsId().length === 0
+        ? ""
+        : '<button class="clear-cart-btn btn btn-warning mt-3 rounded-pill">Vider le panier</button>'
+    }
+  `;
 
   // Sélection de la section qui affichera les articles du panier
   const sectionCart = document.getElementById("cart-products");
