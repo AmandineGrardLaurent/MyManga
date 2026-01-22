@@ -7,22 +7,22 @@ export default function Sidebar() {
   const categories = ["Livre", "Poster", "Accessoire", "Figurine", "Goodie"];
   return `
       <nav
-        class="container-menu d-flex flex-column bg-light border-end position-fixed vh-100 p-3 g-5"
+        class="container-menu d-flex flex-column bg-light border-end position-fixed vh-100 pt-3 px-3"
         style="width: 220px;"
       >
-        <img src="../../../docs/logo.png" />
-        <button class="btn btn-success w-100 mb-2" data-page="products">
+        <img src="../../../docs/logo.png" alt="logo"/>
+        <button class="btn btn-success w-100 mb-2 rounded-pill my-4" data-page="products">
           Tous les produits
         </button>
         ${categories
           .map(
             (category) =>
-              `<button class="btn btn-outline-success w-100 mb-2" data-category=${category}>
+              `<button class="btn btn-warning w-100 mb-2 rounded-pill" data-category=${category}>
           ${category}
         </button>`,
           )
           .join("")}
-        <button class="btn btn-danger w-100 mb-2" data-page="cart">
+        <button class="btn btn-danger w-100 mb-2 rounded-pill" data-page="cart">
           Panier
         </button>
       </nav>
