@@ -1,4 +1,6 @@
-// Classe qui gère le panier
+// Classe Cart
+// Gère la logique du panier de l'application
+// Le panier stocke uniquement les identifiants des articles dans le localStorage
 export default class Cart {
   // Constructeur : initialise le panier à partir du localStorage (ids)
   // ou crée un tableau vide si rien n'existe encore
@@ -7,6 +9,7 @@ export default class Cart {
   }
 
   // Fonction pour ajouter un article au panier
+  // productId : identifiant unique de l'article
   addToCart(productId) {
     // On récupère le panier dans le navigateur (à jour)
     this.itemsId = JSON.parse(localStorage.getItem("cart")) || [];
@@ -26,6 +29,7 @@ export default class Cart {
   }
 
   // Fonction pour supprimer un article du panier
+  // productId : identifiant unique de l'article
   removeFromCart(productId) {
     // Filtre l'id de l'article du tableau des ids
     this.itemsId = this.itemsId.filter((id) => id !== productId);
@@ -46,6 +50,7 @@ export default class Cart {
     alert("Panier vidé");
   }
 
+  // Retourne la liste des ids des articles présents dans le panier
   getItemsId() {
     return this.itemsId;
   }
